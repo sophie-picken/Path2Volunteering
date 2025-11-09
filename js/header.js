@@ -14,7 +14,7 @@ function loadHeader() {
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="nav-actions">
-            <a href="login.html" class="btn-login">Login</a>
+            <a href="login.html" class="btn-login">Login/Register</a>
             <a href="profile.html" class="btn-profile">Profile</a>
           </div>
         </nav>
