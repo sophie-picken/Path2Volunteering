@@ -234,9 +234,9 @@ section h2 {
     border-radius: 12px;
     font-size: 0.8rem;
     font-weight: 600;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    display: block;
+    width: fit-content;
+    margin-bottom: 0.75rem;
 }
 
 .opportunity-card h3 {
