@@ -5,7 +5,7 @@ function loadHeader() {
       <header class="header">
         <nav class="nav-container">
           <div class="logo">
-            <a href="index.html">Path2Volunteer</a>
+            <a href="index.html"><img src="images/Path2VolunteerLogo.png" alt ="Path2Volunteer Logo"></a>
           </div>
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
