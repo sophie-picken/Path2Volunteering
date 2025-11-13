@@ -373,3 +373,20 @@ section h2 {
     }
 }
 
+/* Leaderboard Hero Section */
+.leaderboard-hero {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.leaderboard-hero h1 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.leaderboard-hero > p {
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
