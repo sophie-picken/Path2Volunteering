@@ -382,12 +382,12 @@ section h2 {
 
 .leaderboard-hero h1 {
     font-size: 2rem;
-    color: #1f2937;
+    color: white;
     margin-bottom: 0.5rem;
 }
 
 .leaderboard-hero > p {
-    color: #6b7280;
+    color: white;
     margin-bottom: 2rem;
 }
 
