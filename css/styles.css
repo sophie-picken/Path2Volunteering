@@ -577,3 +577,123 @@ section h2 {
     color: #2563eb;
     margin-left: auto;
 }
+/* Form box */
+.box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    padding: 3rem 2.5rem;
+    margin: auto;
+}
+
+/* Tabs container */
+.tabs {
+    display: flex;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.tabs button {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6b7280;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.tabs button:hover {
+    color: #1f2937;
+}
+
+.tabs button.active {
+    color: #1f2937;
+}
+
+.tabs button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #fbbf24;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form.hidden {
+    display: none;
+}
+
+/* Input fields */
+form input {
+    padding: 1rem 1.25rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+form input::placeholder {
+    color: #9ca3af;
+}
+
+form input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Submit button */
+.submit {
+    background-color: #fbbf24;
+    color: #1f2937;
+    font-weight: 600;
+    padding: 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 0.5rem;
+}
+
+.submit:hover {
+    background-color: #f59e0b;
+}
+
+.submit:active {
+    transform: scale(0.98);
+}
+
+/* Message */
+.message {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #16a34a;
+    min-height: 20px;
+}
+
+/* Login/Signup Page Main */
+body:has(.box) main {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #f3f4f6;
+    max-width: 100%;
+}

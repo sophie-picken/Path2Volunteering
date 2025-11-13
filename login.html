@@ -9,101 +9,64 @@
 <body>
     <div id="header"></div>
     
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Connecting Volunteers with Opportunities That Make a Difference</h1>
-            <p>Join thousands of volunteers making a real impact in communities worldwide</p>
-            <div class="hero-buttons">
-                <a href="opportunities.html" class="btn-primary">Start Volunteering</a>
-                <a href="#how-it-works" class="btn-secondary">Learn More</a>
-            </div>
-        </section>
+  <main>
+    <div class="box">
+      <div class="tabs">
+        <button id="loginTab" class="active">Login</button>
+        <button id="signupTab">Sign Up</button>
+      </div>
 
-        <!-- How It Works -->
-        <section id="how-it-works" class="how-it-works">
-            <h2>How It Works</h2>
-            <p class="subtitle">Get started in three simple steps</p>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Create Your Profile</h3>
-                    <p>Sign up and tell us about your skills, interests, and availability</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Find Opportunities</h3>
-                    <p>Browse opportunities that match your profile and preferences</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Make an Impact</h3>
-                    <p>Apply, volunteer, earn badges, and track your positive impact</p>
-                </div>
-            </div>
-        </section>
+      <form id="loginForm">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <button class="submit">Login</button>
+      </form>
 
-        <!-- Featured Opportunities -->
-        <section class="opportunities">
-            <h2>Featured Opportunities</h2>
-            <p class="subtitle">Discover volunteer opportunities that match your interests</p>
-            <div class="opportunity-grid">
-                <div class="opportunity-card">
-                    <span class="badge-urgent">Urgently Needed</span>
-                    <h3>Education & Mentoring</h3>
-                    <p class="opportunity-title">Children's reading session</p>
-                    <p class="opportunity-location">City Centre</p>
-                    <p class="opportunity-time">Sat 9:00 AM - 1:00 AM</p>
-                    <p class="opportunity-volunteers">5/8 Volunteers</p>
-                    <a href="opportunities.html" class="btn-view">View Details</a>
-                </div>
-                <div class="opportunity-card">
-                    <h3>Community Events</h3>
-                    <p class="opportunity-title">Local food bank support</p>
-                    <p class="opportunity-location">North District</p>
-                    <p class="opportunity-time">Sun 10:00 AM - 2:00 PM</p>
-                    <p class="opportunity-volunteers">3/6 Volunteers</p>
-                    <a href="opportunities.html" class="btn-view">View Details</a>
-                </div>
-                <div class="opportunity-card">
-                    <h3>Health & Wellbeing</h3>
-                    <p class="opportunity-title">Senior care companion</p>
-                    <p class="opportunity-location">Care Home</p>
-                    <p class="opportunity-time">Flexible schedule</p>
-                    <p class="opportunity-volunteers">2/4 Volunteers</p>
-                    <a href="opportunities.html" class="btn-view">View Details</a>
-                </div>
-            </div>
-        </section>
+      <form id="signupForm" class="hidden">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <button class="submit">Sign Up</button>
+      </form>
 
-        <!-- Why Volunteer -->
-        <section class="why-volunteer">
-            <h2>Why Volunteer?</h2>
-            <div class="benefits-grid">
-                <div class="benefit">
-                    <h3>Recognition & Rewards</h3>
-                    <p>Earn badges, certificates, and discount codes for your contributions</p>
-                </div>
-                <div class="benefit">
-                    <h3>Flexibility</h3>
-                    <p>Choose opportunities that fit your schedule and commitments</p>
-                </div>
-                <div class="benefit">
-                    <h3>Mental Health Support</h3>
-                    <p>Access resources for wellbeing and burnout prevention</p>
-                </div>
-                <div class="benefit">
-                    <h3>Training & Development</h3>
-                    <p>Free training programs and skill-building dashboards</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <div id="footer"></div>
-    
-    <script src="js/header.js"></script>
-    <script src="js/footer.js"></script>
-    <script src="js/main.js"></script>
+      <p id="message" class="message"></p>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script>
+    const loginTab = document.getElementById("loginTab");
+    const signupTab = document.getElementById("signupTab");
+    const loginForm = document.getElementById("loginForm");
+    const signupForm = document.getElementById("signupForm");
+    const message = document.getElementById("message");
+
+    loginTab.onclick = () => {
+      loginTab.classList.add("active"); signupTab.classList.remove("active");
+      loginForm.classList.remove("hidden"); signupForm.classList.add("hidden");
+      message.textContent = "";
+    };
+    signupTab.onclick = () => {
+      signupTab.classList.add("active"); loginTab.classList.remove("active");
+      signupForm.classList.remove("hidden"); loginForm.classList.add("hidden");
+      message.textContent = "";
+    };
+
+    loginForm.onsubmit = e => {
+      e.preventDefault();
+      message.textContent = "✅ Login successful! Redirecting...";
+      setTimeout(()=>window.location.href="profile.html", 1000);
+    };
+    signupForm.onsubmit = e => {
+      e.preventDefault();
+      message.textContent = "✅ Account created! Please login.";
+      setTimeout(()=>loginTab.click(), 1200);
+    };
+  </script>
+
 </body>
 </html>
