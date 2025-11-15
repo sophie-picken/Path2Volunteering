@@ -733,6 +733,7 @@ body:has(.box) main {
 /* Inputs + Textarea */
 .styled-form input,
 .styled-form textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     padding: 14px;
     margin-bottom: 15px;
@@ -775,7 +776,7 @@ body:has(.box) main {
 }
 
 .contact-info a {
-    color: #F2B300;
+    color:  #2563eb;
     text-decoration: none;
     font-weight: 600;
 }
