@@ -697,3 +697,126 @@ body:has(.box) main {
     background-color: #f3f4f6;
     max-width: 100%;
 }
+
+/* =============== CONTACT CARD (Matches Login Design) =============== */
+
+.contact-card {
+    width: 90%;
+    max-width: 450px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.tab-header {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 25px;
+}
+
+.tab-header .tab {
+    flex: 1;
+    text-align: center;
+    padding: 14px 0;
+    font-weight: 600;
+    background: #f3f3f3;
+    border-radius: 6px 6px 0 0;
+}
+
+.tab-header .active {
+    background: #F2B300;
+    color: #fff;
+}
+
+/* Inputs + Textarea */
+.styled-form input,
+.styled-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.styled-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Yellow Submit Button */
+.yellow-btn {
+    width: 100%;
+    background: #F2B300;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.yellow-btn:hover {
+    background: #d89b00;
+}
+
+/* Contact Info */
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info h3 {
+    margin: 10px 0 5px;
+}
+
+.contact-info a {
+    color: #F2B300;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    margin: 25px 0;
+}
+
+/* =============== MAP + BOTTOM INFO SECTIONS =============== */
+
+.info-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.info-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.map-container {
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.info-box {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.info-box h3 {
+    margin-bottom: 10px;
+    color: #F2B300;
+}
