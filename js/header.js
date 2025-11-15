@@ -11,7 +11,7 @@ function loadHeader() {
             <li><a href="index.html">Home</a></li>
             <li><a href="opportunities.html">Opportunities</a></li>
             <li><a href="leaderboard.html">Leaderboard</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <div class="nav-actions">
             <a href="login.html" class="btn-login">Login/Register</a>
