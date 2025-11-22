@@ -27,7 +27,7 @@ function loadFooter() {
           <p>© 2025 Path2Volunteer. All rights reserved</p>
         </div>
       </footer>
-    `;
+    `
   }
 }
 
