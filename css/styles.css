@@ -274,6 +274,56 @@ section h2 {
     background-color: #1e40af;
 }
 
+/* About Us Section */
+.about-us {
+    background-color: #e5e7eb;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.tagline {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-card {
+    text-align: center;
+}
+
+.about-icon {
+    width: 120px;
+    height: 120px;
+    background-color: #d1d5db;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+}
+
+.about-card h3 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.about-card p {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
 /* Why Volunteer Section */
 .why-volunteer {
     background-color: white;
