@@ -577,6 +577,128 @@ section h2 {
     color: #2563eb;
     margin-left: auto;
 }
+
+/* Leaderboard Layout */
+.leaderboard-container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.leaderboard-main {
+    min-width: 0;
+}
+
+.leaderboard-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Sidebar Cards */
+.sidebar-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sidebar-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+    text-align: center;
+}
+
+/* Achievement Card */
+.achievement-card {
+    text-align: center;
+}
+
+.achievement-icon {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement-card h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 1rem 0 0.5rem;
+}
+
+.awarded-to {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin: 0.5rem 0 0.25rem;
+}
+
+.winner-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2563eb;
+    margin: 0.25rem 0 1rem;
+}
+
+.achievement-description {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* Points Card */
+.points-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.points-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.points-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.points-label {
+    font-size: 0.95rem;
+    color: #1f2937;
+}
+
+.points-value {
+    font-weight: 700;
+    color: #2563eb;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .leaderboard-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .leaderboard-sidebar {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 640px) {
+    .leaderboard-sidebar {
+        flex-direction: column;
+    }
+}
 /* Form box */
 .box {
     background: white;

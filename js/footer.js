@@ -7,13 +7,14 @@ function loadFooter() {
           <div class="footer-section">
             <h3>Path2Volunteer</h3>
             <p>Connecting volunteers with meaningful opportunities to make a difference.</p>
+                        <p><a href="https://example.com/">Terms and Conditions</a></p>
           </div>
           <div class="footer-section">
             <h4>Quick Links</h4>
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="opportunities.html">Find Opportunities</a></li>
-              <li><a href="leaderboard.html">Leaderboard</a></li>
+              <li><a href="https://x.com" target="_blank">X (Twitter)</a></li>
+              <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+              <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
             </ul>
           </div>
           <div class="footer-section">

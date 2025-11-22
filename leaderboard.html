@@ -8,8 +8,8 @@
 </head>
 <body>
     <div id="header"></div>
-    
- <main>
+
+    <main>
         <!-- Hero Section with Statistics -->
         <section class="leaderboard-hero">
             <h1>Volunteer Leaderboard</h1>
@@ -40,12 +40,12 @@
         </section>
 
         <!-- Main Leaderboard Section -->
-        <section class="leaderboard-section">
             <div class="leaderboard-container">
                 <div class="leaderboard-main">
-                    <div class="section-header">
-                        <h2>TOP VOLUNTEERS</h2>
-                    </div>
+                        <section class="leaderboard-section">
+                            <div class="section-header">
+                                 <h2>TOP VOLUNTEERS</h2>
+                             </div>
 
                     <!-- Top 3 Podium -->
                     <div class="podium">
@@ -72,10 +72,39 @@
                     <div class="rankings-list" id="rankings-list">
                         <!-- Will be populated by JavaScript -->
                     </div>
+                    </section>
                     </div>
 
-    </main>
-    
+    <div class="leaderboard-sidebar">
+            <!-- Achievement of the Month -->
+            <section class="sidebar-card achievement-card">
+                <h3>Achievement of the Month</h3>
+                <h4>Community Hero</h4>
+                <p class="awarded-to">Awarded to:</p>
+                <p class="winner-name">Fahim Aziz</p>
+                <p class="achievement-description">Volunteer 50+ hours in a single month</p>
+            </section>
+
+            <!-- How Points Work -->
+            <section class="sidebar-card points-card">
+                <h3>How Points Work</h3>
+                <div class="points-breakdown">
+                    <div class="points-item">
+                        <span class="points-label">1 hour volunteered</span>
+                        <span class="points-value">10 points</span>
+                    </div>
+                    <div class="points-item">
+                        <span class="points-label">Complete an event</span>
+                        <span class="points-value">50 points</span>
+                    </div>
+                    <div class="points-item">
+                        <span class="points-label">Earn a badge</span>
+                        <span class="points-value">100 points</span>
+                    </div>
+            </section>
+        </div>
+        </div>
+</main>
     <div id="footer"></div>
     
     <script src="js/header.js"></script>
